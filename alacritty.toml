@@ -1,0 +1,47 @@
+# alacritty.toml
+
+# -----------------------------------------------------------------------------
+# -- Basic Window -------------------------------------------------------------
+
+[window]
+startup_mode = "Maximized"
+title = "terminal"
+opacity = 0.7
+blur = true
+dimensions = { columns = 90, lines = 24 }
+padding = { x = 10, y = 5 }
+option_as_alt = "Both"
+
+[cursor]
+style = "Block"
+unfocused_hollow = true
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xe6e6e6"
+
+[colors.line_indicator]
+background = "None"
+foreground = "None"
+
+[[keyboard.bindings]]
+key = "F"
+mods = "Alt"
+action = "ToggleSimpleFullscreen"
+
+# -----------------------------------------------------------------------------
+# -- Fonts --------------------------------------------------------------------
+[font]
+size = 15.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
